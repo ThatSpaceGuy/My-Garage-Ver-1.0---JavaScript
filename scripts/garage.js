@@ -31,16 +31,11 @@ var displayCars = function () {
   // for each car in the garage, add a list item with year, make and model
   for (var i = 0; i < garage.length; i++) {
     // basic car info - year, make, model
-    var carInfo = garage[i].year+' '+garage[i].make+' '+garage[i].model;
-    // put carInfo inside a list item through a textNode
-    // create the li
-    var listItem = document.createElement('li');
-    // create the textNode
-    var textNode = document.createTextNode(carInfo);
-    // append textNode as child to li
-    listItem.appendChild(textNode);
-    // append list item to the ul
-    carList.appendChild(listItem);
+    var carInfo = '<h2>'+garage[i].year+' '+garage[i].make+' '+garage[i].model+
+      '</h2><img src="'+garage[i].picURL+'"><p>'+garage[i].description+'</p>';
+    // append car info to output div
+    carList.innerHTML += carInfo;
+
   }
 
 };
