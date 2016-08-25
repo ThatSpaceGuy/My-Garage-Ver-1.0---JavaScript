@@ -17,4 +17,10 @@ var addCar = function (){
   // push car into garage
   garage.push(newCar);
   // display cars
+  displayCars();
 }; // end addCar
+
+var displayCars = function () {
+  console.log('in displayCars');
+  console.log(garage);
+};
