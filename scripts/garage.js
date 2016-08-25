@@ -1,5 +1,7 @@
 console.log('garage.js sourced!');
 
+var garage = [];
+
 var addCar = function (){
   console.log('in addCar');
   // get user input
@@ -13,5 +15,6 @@ var addCar = function (){
   };
   console.log(newCar);
   // push car into garage
+  garage.push(newCar);
   // display cars
 }; // end addCar
