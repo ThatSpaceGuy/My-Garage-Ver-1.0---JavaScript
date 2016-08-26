@@ -46,10 +46,21 @@ var displayCars = function () {
   for (var i = 0; i < garage.length; i++) {
     // basic car info - year, make, model
     var carInfo = '<h2>'+garage[i].year+' '+garage[i].make+' '+garage[i].model+
-    '</h2><img src="'+garage[i].picURL+'"><p>'+garage[i].description+'</p>';
+    '</h2><img src="'+garage[i].picURL+'"><p>'+garage[i].description+
+    ' <button onClick="takeOut('+i+')">Take me out for a drive</button></p>';
     // append car info to output div
     carList.innerHTML += carInfo;
 
   }
 
+};
+
+var takeOut = function(index){
+  console.log('in takeOut with index:',index);
+
+  console.log('taking out the '+garage[index].year+' '+garage[index].model);
+  // splice the car out of the array
+  garage.splice(index,1);
+  // show cars in garage again
+  displayCars();
 };
