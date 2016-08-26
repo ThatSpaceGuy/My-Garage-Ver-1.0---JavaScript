@@ -1,0 +1,21 @@
+/*html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, a {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	font: inherit;
+}*/
+
+
+body {
+	text-align: center;
+	color: white;
+	background-image: url("https://c1.staticflickr.com/5/4106/5197719026_c16079793a_b.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	color: black;
+}
