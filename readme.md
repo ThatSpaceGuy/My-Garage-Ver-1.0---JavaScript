@@ -11,3 +11,5 @@ Versions/ Branches
 * 0.4 - push car object into "garage" arrays
 * 0.5 - list cars on DOM
 * 0.6 - display cars on DOM
+* 0.7 - clear inputs
+* 0.8 - check for empty values
