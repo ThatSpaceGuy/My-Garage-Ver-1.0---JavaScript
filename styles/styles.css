@@ -16,6 +16,10 @@ body {
 	background-size: cover;
 }
 
-button {
+button, input{
 	color: black;
+}
+
+img{
+	height: 300px;
 }

@@ -6,18 +6,18 @@
     <script src="scripts/garage.js"></script>
 		<link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/styles.css"/>
-		<title>JavaScript Garage version 1.0</title>
+		<title>JavaScript Garage version 2.0</title>
 	</head>
 	<body>
 		<h1>My Garage</h1>
-		<input type="text" id="yearIn" value="" placeholder="Year">
-		<input type="text" id="makeIn" value="" placeholder="Make">
-		<input type="text" id="modelIn" value="" placeholder="Model">
+		<input type="text" class="requiredField" id="yearIn" value="" placeholder="Year">
+		<input type="text" class="requiredField" id="makeIn" value="" placeholder="Make">
+		<input type="text" class="requiredField" id="modelIn" value="" placeholder="Model">
 		<input type="text" id="picURLIn" value="" placeholder="Picture URL">
 		<input type="text" id="descriptionIn" value="" placeholder="Description">
 		<button onclick="addCar()">Add car to the Garage!</button>
 		<div id='allCars'>
-			<h2>Garage is Empty!</h2>
+			<h2 id='emptyText'>Garage is Empty!</h2>
 		</div>
 	</body>
 </html>
